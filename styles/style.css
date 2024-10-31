@@ -104,7 +104,8 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #FFF;
+  outline: 1px solid #FFF;
+  outline-offset: 2px; 
   padding: 1px;
 }
 
@@ -223,9 +224,9 @@ ol {
 .content__list {
   overflow: auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  margin-top: 26px;
+  height: 298px;
+  overflow:scroll ;
   inline-size: inherit;
 }
 
@@ -270,6 +271,9 @@ ol {
   font-size: 30px;
   line-height: 100%; /* 30px */
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
