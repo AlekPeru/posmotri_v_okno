@@ -224,11 +224,20 @@ ol {
 .content__list {
   overflow: auto;
   position: relative;
-  margin-top: 26px;
-  height: 298px;
-  overflow:scroll ;
+  display: flex; 
+  flex-direction: column; 
   inline-size: inherit;
 }
+.content__list-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 0;
+}
+
 
 .content__card-link {
   display: block;
@@ -274,6 +283,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
